@@ -1,0 +1,17 @@
+{
+  "name": "admin-antd-vue-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": "https://github.com/lqsong/admin-antd-vue-docs",
+  "keywords": [],
+  "author": "李庆松 <957698457@qq.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "vuepress": "^1.7.1"
+  }
+}
