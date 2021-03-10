@@ -1,14 +1,14 @@
 # v-permission
 
-[v-permission](https://github.com/lqsong/admin-antd-vue/blob/main/src/directives/permission/) 自定义指令，用于验证当前用户权限。
+[v-permission](https://github.com/lqsong/admin-antd-vue/blob/vite/src/directives/permission/) 自定义指令，用于验证当前用户权限。
 
 ## Example
 
-[在线链接](http://demo.admin-antd-vue.liqingsong.cc/#/roles/all)
+[在线链接](http://vite-demo.admin-antd-vue.liqingsong.cc/#/roles/all)
 
 在线代码
 
-[@/views/roles/all/index.vue](https://github.com/lqsong/admin-antd-vue/blob/main/src/views/roles/all/index.vue)
+[@/views/roles/all/index.vue](https://github.com/lqsong/admin-antd-vue/blob/vite/src/views/roles/all/index.vue)
 
 ## Props
 

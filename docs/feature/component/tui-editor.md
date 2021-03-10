@@ -1,6 +1,6 @@
 # tui-editor
 
-[TuiEditor](https://github.com/lqsong/admin-antd-vue/tree/main/src/components/TuiEditor) 组件基于 `tui-editor` 封装，是一款 Markdown 编辑器；`tui-editor` [官网](https://ui.toast.com/tui-editor/)，[GitHub](https://github.com/nhnent/tui.editor)。
+[TuiEditor](https://github.com/lqsong/admin-antd-vue/tree/vite/src/components/TuiEditor) 组件基于 `tui-editor` 封装，是一款 Markdown 编辑器；`tui-editor` [官网](https://ui.toast.com/tui-editor/)，[GitHub](https://github.com/nhnent/tui.editor)。
 
 ## Editor
 
@@ -178,7 +178,7 @@ export default defineComponent({
 
 ## Example
 
-[在线链接](http://demo.admin-antd-vue.liqingsong.cc/#/component/editor/tuieditor)
+[在线链接](http://vite-demo.admin-antd-vue.liqingsong.cc/#/component/editor/tuieditor)
 
 ## 卸载
 
@@ -190,4 +190,4 @@ export default defineComponent({
 npm uninstall @toast-ui/editor
 ```
 
-2、删除组件文件目录 [@/components/TuiEditor](https://github.com/lqsong/admin-antd-vue/tree/main/src/components/TuiEditor)
+2、删除组件文件目录 [@/components/TuiEditor](https://github.com/lqsong/admin-antd-vue/tree/vite/src/components/TuiEditor)

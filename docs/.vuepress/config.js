@@ -1,7 +1,8 @@
 module.exports = {
     title: 'admin-antd-vue',
-    description: 'Ant Design Vue3.x Admin',
-    dest: './dist',
+    description: 'Vite Ant Design Vue3.x Admin',
+    dest: './vitets',
+    base: '/vitets/',
     port: '8080',
     head: [
         ['link', {rel: 'icon', href: '/favicon.ico'}],

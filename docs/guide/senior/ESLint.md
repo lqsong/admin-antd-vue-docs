@@ -4,14 +4,9 @@
 
 ## 配置项
 
-所有的配置文件都在 [.eslintrc.js](https://github.com/lqsong/admin-antd-vue/blob/main/.eslintrc.js) 中。
+所有的配置文件都在 [.eslintrc.js](https://github.com/lqsong/admin-antd-vue/blob/vite/.eslintrc.js) 中。
 你可以借鉴 vue 官方的 eslint 规则 [eslint-config-vue](https://github.com/vuejs/eslint-config-vue) 在结合自己的需求进行定制化配置。
 
-
-## 取消 ESLint 校验
-
-如果你不想使用 ESLint 校验（不推荐取消），只要找到 [vue.config.js](https://github.com/lqsong/admin-antd-vue/blob/main/vue.config.js) 文件。
-进行如下设置 `lintOnSave: false` 即可。[Vue官方文档](https://cli.vuejs.org/zh/config/#lintonsave)
 
 ## vscode 配置 ESLint
 

@@ -1,7 +1,7 @@
 # CKEditor
 
 
-[CKEditor](https://github.com/lqsong/admin-antd-vue/tree/main/src/components/CKEditor/) 组件基于 `CKEditor 5` 封装，是一款 富文本编辑器；`CKEditor` [官网](https://ckeditor.com/)。
+[CKEditor](https://github.com/lqsong/admin-antd-vue/tree/vite/src/components/CKEditor/) 组件基于 `CKEditor 5` 封装，是一款 富文本编辑器；`CKEditor` [官网](https://ckeditor.com/)。
 
 
 ## Props
@@ -50,7 +50,7 @@ export const CKEditorConfig = {
 
 ## Example
 
-[在线链接](http://demo.admin-antd-vue.liqingsong.cc/#/component/editor/ckeditor)
+[在线链接](http://vite-demo.admin-antd-vue.liqingsong.cc/#/component/editor/ckeditor)
 
 
 ## 卸载
@@ -64,4 +64,4 @@ npm uninstall @ckeditor/ckeditor5-build-decoupled-document
 npm uninstall @ckeditor/ckeditor5-vue
 ```
 
-2、删除组件文件目录 [@/components/CKEditor](https://github.com/lqsong/admin-antd-vue/tree/main/src/components/CKEditor/)
+2、删除组件文件目录 [@/components/CKEditor](https://github.com/lqsong/admin-antd-vue/tree/vite/src/components/CKEditor/)

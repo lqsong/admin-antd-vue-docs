@@ -5,7 +5,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/lqsong/admin-antd-vue.svg?style=social&label=Stars)](https://github.com/lqsong/admin-antd-vue)
 
 
-[admin-antd-vue](http://demo.admin-antd-vue.liqingsong.cc/) 是一个后台前端解决方案，它基于 [Vue3.x](https://github.com/vuejs/vue-next) 、[Ant Design Vue](https://2x.antdv.com) 实现。它使用了最新的前端技术栈、动态路由、权限验证、国际化、Mock 数据等，它可以帮助你快速搭建企业级中后台产品原型。相信不管你的需求是什么，本项目都能帮助到你。
+[admin-antd-vue-vite](http://vite-demo.admin-antd-vue.liqingsong.cc/) 是一个后台前端解决方案，它基于 [Vite](https://github.com/vitejs/vite) 、[Vue3.x](https://github.com/vuejs/vue-next) 、[Ant Design Vue](https://2x.antdv.com) 实现。它使用了最新的前端技术栈、动态路由、权限验证、国际化、Mock 数据等，它可以帮助你快速搭建企业级中后台产品原型。相信不管你的需求是什么，本项目都能帮助到你。
 
 
 ## 功能
@@ -51,7 +51,7 @@
   - 权限验证
 ```
 
-| **[http://demo.admin-antd-vue.liqingsong.cc](http://demo.admin-antd-vue.liqingsong.cc/)**  |
+| **[http://vite-demo.admin-antd-vue.liqingsong.cc](http://vite-demo.admin-antd-vue.liqingsong.cc/)**  |
 :-------------------------:
 | ![Home](https://gitee.com/lqsong/public/raw/master/admin-antd-vue/home.png)  |
 | ![Home](https://gitee.com/lqsong/public/raw/master/admin-antd-vue/home2.png)  |
@@ -60,7 +60,7 @@
 
 ## 前序准备
 
-在开始之前，推荐先学习  [Vue3.x](https://github.com/vuejs/vue-next) 、 [Vuex4.x](https://github.com/vuejs/vuex)、 [Vue-router4.x](https://github.com/vuejs/vue-router-next)、 [ES2015+](http://es6.ruanyifeng.com/) 、 [TypeScript](https://github.com/Microsoft/TypeScript) 、 [Ant Design Vue](https://2x.antdv.com) , 了解 [Vue-cli](https://github.com/vuejs/vue-cli) 、 [Axios](https://github.com/axios/axios) 、[Mock.js](https://github.com/nuysoft/Mock) ，提前了解和学习这些知识会对使用本项目有很大的帮助，因为本项目技术栈都是基于它们。并且你需要在本地安装 [node 版本10.13 或以上](http://nodejs.org/) 和 [git](https://git-scm.com/)。
+在开始之前，推荐先学习  [Vue3.x](https://github.com/vuejs/vue-next) 、 [Vuex4.x](https://github.com/vuejs/vuex)、 [Vue-router4.x](https://github.com/vuejs/vue-router-next)、 [ES2015+](http://es6.ruanyifeng.com/) 、 [TypeScript](https://github.com/Microsoft/TypeScript) 、 [Ant Design Vue](https://2x.antdv.com) , 了解 [Vite](https://github.com/vitejs/vite) 、 [Axios](https://github.com/axios/axios) 、[Mock.js](https://github.com/nuysoft/Mock) ，提前了解和学习这些知识会对使用本项目有很大的帮助，因为本项目技术栈都是基于它们。并且你需要在本地安装 [node 版本10.13 或以上](http://nodejs.org/) 和 [git](https://git-scm.com/)。
 
 **本项目不支持低版本浏览器(如 ie)**
 
@@ -72,7 +72,6 @@
 ├── mock                       # Mock文件目录
 ├── public                     # 静态资源
 │   ├── favicon.ico            # favicon图标
-│   └── index.html             # html模板
 ├── src                        # 源代码
 │   ├── assets                 # 静态资源
 │   │   ├── css                # 项目公用 CSS 样式
@@ -122,24 +121,26 @@
 │   ├── main.ts                # 入口文件 加载组件 初始化等
 │   └── shims-vue.d.ts         # Vue TypeScript 配置
 ├── tests                      # 测试目录
-├── .browserslistrc            # 项目的浏览器配置
 ├── .env.development           # 开发环境变量配置
 ├── .env.production            # 生产环境变量配置
+├── .eslintignore              # eslint 忽略配置
 ├── .eslintrc.js               # eslint 配置项
 ├── .gitignore                 # Git忽略文件配置
-├── babel.config.js            # babel-loader 配置
+├── .prettierignore            # prettier 忽略配置
+├── index.html                 # html模板
 ├── jest.config.js             # jest config
 ├── package.json               # 项目信息
+├── prettier.config.js         # prettier 配置
 ├── README.md                  # readme
 ├── tsconfig.json              # TypeScript 配置
-└── vue.config.js              # vue-cli 配置 
+└── vite.config.ts             # vite 配置 
 ```
 
 ## 安装
 
 ```bash
 # 克隆项目
-git clone https://github.com/lqsong/admin-antd-vue.git
+git clone -b vite https://github.com/lqsong/admin-antd-vue.git
 
 # 进入项目目录
 cd admin-antd-vue
@@ -153,9 +154,9 @@ yarn
 npm install
 
 # 本地开发 启动项目
-yarn serve
+yarn dev
 # or
-npm run serve
+npm run dev
 ```
 
 > 推荐使用 yarn , **[yarn安装与常用命令](http://liqingsong.cc/article/detail/9)** 。
@@ -163,7 +164,7 @@ npm run serve
 
 <br/>
 
-启动完成后会，打开浏览器访问 [http://localhost:8000](http://localhost:8000)， 你看到下面的页面就代表操作成功了。
+启动完成后会，打开浏览器访问 [http://localhost:3000](http://localhost:3000)， 你看到下面的页面就代表操作成功了。
 
 ![Home](https://gitee.com/lqsong/public/raw/master/admin-antd-vue/home.png)
 

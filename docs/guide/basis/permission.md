@@ -10,15 +10,15 @@
 
 ### 路由页面访问权限
 
-`IndexLayout` 中通过 [@/components/Permission](https://github.com/lqsong/admin-antd-vue/tree/main/src/components/Permission) 组件判断权限进行展示。
+`IndexLayout` 中通过 [@/components/Permission](https://github.com/lqsong/admin-antd-vue/tree/vite/src/components/Permission) 组件判断权限进行展示。
 
 ### 页面按钮权限
 
-- 1、页面中的按钮可以通过[@/components/Permission](https://github.com/lqsong/admin-antd-vue/tree/main/src/components/Permission) 组件验证权限是否展示。
+- 1、页面中的按钮可以通过[@/components/Permission](https://github.com/lqsong/admin-antd-vue/tree/vite/src/components/Permission) 组件验证权限是否展示。
 
-- 2、页面中的按钮可以通过[@/directives/permission](https://github.com/lqsong/admin-antd-vue/tree/main/src/directives/permission) 自定义指令验证权限是否展示。
+- 2、页面中的按钮可以通过[@/directives/permission](https://github.com/lqsong/admin-antd-vue/tree/vite/src/directives/permission) 自定义指令验证权限是否展示。
 
-使用样例：[代码](https://github.com/lqsong/admin-antd-vue/tree/main/src/views/roles/all)，[样例](http://demo.admin-antd-vue.liqingsong.cc/#/roles/all)
+使用样例：[代码](https://github.com/lqsong/admin-antd-vue/tree/vite/src/views/roles/all)，[样例](http://vite-demo.admin-antd-vue.liqingsong.cc/#/roles/all)
 
 
 ## 路由`roles`使用方法

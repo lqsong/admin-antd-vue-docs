@@ -1,6 +1,6 @@
 # 新增页面
 
-查看 [@/views/home](https://github.com/lqsong/admin-antd-vue/tree/main/src/views/home) 首页样例代码，其目录格式如下：
+查看 [@/views/home](https://github.com/lqsong/admin-antd-vue/tree/vite/src/views/home) 首页样例代码，其目录格式如下：
 
 ```
 views                  # 页面组件目录(所有页面放在这里)
