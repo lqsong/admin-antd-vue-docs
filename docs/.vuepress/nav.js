@@ -48,6 +48,17 @@ module.exports = [
         ]
     },
     {
+        text: 'webpack.ts',
+        items: [
+            {
+                text: '其他版本',
+                items: [
+                    {text: 'vite.ts', link: 'http://admin-antd-vue.liqingsong.cc/vitets/'},
+                ] 
+            }            
+        ]
+    },
+    {
         text: '预览', link: 'http://demo.admin-antd-vue.liqingsong.cc'
     },
     {
