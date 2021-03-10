@@ -1,6 +1,6 @@
 module.exports = {
     title: 'admin-antd-vue',
-    description: 'Ant Design Vue3.x Admin',
+    description: '基于 VueJs 、Ant Design 、TypeScript 、Axios ... 后台前端解决方案',
     dest: './dist',
     port: '8080',
     head: [
@@ -19,8 +19,7 @@ module.exports = {
         lineNumbers: true
     },
     themeConfig: {
-        nav: require('./nav'),
-        sidebar: require('./sidebar'),
+        navbar: false,
         sidebarDepth: 3,
         // lastUpdated: 'Last Updated',
         searchMaxSuggestoins: 10,
