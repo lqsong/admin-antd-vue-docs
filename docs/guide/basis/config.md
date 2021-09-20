@@ -24,6 +24,15 @@ export interface SettingsType {
   headFixed: boolean;
 
   /**
+   * tab菜单开启
+   */
+  tabNavEnable: boolean;
+  /**
+   * 站点首页路由
+   */
+  homeRouteItem: RoutesDataItem;
+
+  /**
    * 站点本地存储Token 的 Key值
    */
   siteTokenKey: string;
@@ -49,6 +58,13 @@ const settings: SettingsType = {
   siteTitle: 'ADMIN-ANTD-VUE',
   topNavEnable: true,
   headFixed: true,
+  tabNavEnable: true,
+  homeRouteItem: {
+      icon: 'control',
+      title: 'index-layout.menu.home.workplace',
+      path: '/home/workplace',
+      component: ()=> import('@/views/home/index.vue')
+  },
   siteTokenKey: 'admin_antd_vue_token',
   ajaxHeadersTokenKey: 'x-token',
   ajaxResponseNoVerifyUrl: [
@@ -71,6 +87,7 @@ export default settings;
 ```ts
 import { createRouter, createWebHashHistory } from 'vue-router';
 import { RoutesDataItem } from "@/utils/routes";
+import settings from "@/config/settings";
 
 import SecurityLayout from '@/layouts/SecurityLayout.vue';
 
@@ -89,9 +106,14 @@ const routes: RoutesDataItem[] = [
       {
         title: 'empty',
         path: '/',
-        redirect: '/home/workplace',
+        redirect: settings.homeRouteItem.path,
         component: IndexLayout,
         children: IndexLayoutRoutes
+      },
+      {
+        title: 'empty',
+        path: '/refresh',
+        component: () => import('@/views/refresh/index.vue'),
       },
     ]
   },  
@@ -114,7 +136,7 @@ const router = createRouter({
     return { top: 0 }
   },
   history: createWebHashHistory(process.env.BASE_URL),
-  routes: routes as any,
+  routes: routes,
 });
 
 export default router;
