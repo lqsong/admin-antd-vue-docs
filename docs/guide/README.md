@@ -20,10 +20,11 @@
 
 - 全局功能
   - 国际化多语言
-  - 动态顶级菜单（支持设置是否启用）
   - 动态侧边栏（支持多级路由嵌套）
   - 动态面包屑（支持自定义配置）
-  - 动态TabNav（支持关闭前置、刷新当前页面、是否启用）
+  - 动态顶级菜单（IndexLayout支持设置是否启用）
+  - 菜单导航模式inline/horizontal切换（UniversalLayout支持）
+  - 主题dark/light切换（UniversalLayout支持）
   - Svg Sprite 图标
   - Mock 数据
 
