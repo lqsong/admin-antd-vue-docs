@@ -56,11 +56,10 @@ export default IndexLayoutRoutes;
 
 ### 有顶部导航
 
-![有顶部导航](https://gitee.com/lqsong/public/raw/master/admin-antd-vue/home.png)
-
+![有顶部导航](http://admin-antd-vue.liqingsong.cc/webpackts/images/indexlayout/home1.png)
 ### 无顶部导航
 
-![无顶部导航](https://gitee.com/lqsong/public/raw/master/admin-antd-vue/home2.png)
+![无顶部导航](http://admin-antd-vue.liqingsong.cc/webpackts/images/indexlayout/home2.png)
 
 ## UserLayout
 
@@ -120,9 +119,14 @@ export default UserLayoutRoutes;
 
 
 
-## 自定义Layout
+## 自定义Layout（UniversalLayout）
 
 > 在实际的项目开发中，以上 Layout 并不一定能满足要求，这就需要我们自定义新增 Layout 了。比如我们自定义一个 `MemberLayout`，步骤如下：
+
+:::tip
+你可以在`@/config/routes.ts`中把`IndexLayout` 替换 `UniversalLayout` 进行测试
+:::
+
 
 ### 一、创建目录结构
 
